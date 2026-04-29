@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mariage en France — Informations pratiques</title>
-  <meta name="description" content="Page d'information élégante pour un mariage en France : programme, lieux, accès, hébergements, dress code, RSVP et FAQ.">
-  <meta property="og:title" content="Mariage en France — Informations pratiques">
-  <meta property="og:description" content="Toutes les informations utiles pour vos invités : date, lieu, déroulé, accès, hébergement et réponses rapides.">
-  <meta property="og:type" content="website">
+  <title>Marina & Clément — Vignoble bordelais</title>
+  <meta name="description" content="Le mariage de Marina et Clément au Domaine de Larchey, dans un univers inspiré du vignoble bordelais.">
   <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,412 +16,314 @@
       --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
       --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
       --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
-      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
-      --text-3xl: clamp(2.5rem, 1rem + 4vw, 5rem);
-      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
-      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
-      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
-      --color-bg: #f7f3ef;
-      --color-surface: #fcfaf7;
-      --color-surface-2: #f4ede7;
-      --color-surface-offset: #efe5dd;
-      --color-border: #d9cec4;
-      --color-divider: #e3d8ce;
-      --color-text: #2f241d;
-      --color-text-muted: #71655e;
-      --color-text-faint: #ab9f98;
-      --color-text-inverse: #fffaf5;
-      --color-primary: #8b5e3c;
-      --color-primary-hover: #714c31;
-      --color-primary-highlight: #e8d9cb;
-      --color-success: #5e7c53;
-      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem; --radius-xl: 1rem; --radius-full: 9999px;
-      --shadow-sm: 0 1px 2px rgba(47,36,29,0.06);
-      --shadow-md: 0 8px 24px rgba(47,36,29,0.08);
-      --shadow-lg: 0 20px 45px rgba(47,36,29,0.12);
-      --content-narrow: 720px; --content-default: 1100px;
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.75rem);
+      --text-3xl: clamp(2.75rem, 1rem + 4vw, 5.5rem);
+      --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f7f2ec;
+      --color-surface: #fcf8f3;
+      --color-surface-2: #f3ebe3;
+      --color-surface-offset: #e9ddd1;
+      --color-border: #dccdbf;
+      --color-divider: #e6d8cb;
+      --color-text: #3f2b25;
+      --color-text-muted: #715d56;
+      --color-text-faint: #a38f87;
+      --color-text-inverse: #fffaf7;
+      --color-primary: #8f1f53;
+      --color-primary-hover: #741844;
+      --color-primary-highlight: #edd8e3;
+      --color-vine: #7f9770;
+      --color-gold: #a77a3d;
+      --radius-sm: .375rem; --radius-md: .625rem; --radius-lg: 1rem; --radius-xl: 1.5rem; --radius-full: 9999px;
+      --shadow-sm: 0 2px 6px rgba(63,43,37,.06);
+      --shadow-md: 0 14px 34px rgba(63,43,37,.08);
+      --shadow-lg: 0 26px 70px rgba(63,43,37,.14);
+      --content-default: 1180px;
       --font-display: 'Boska', Georgia, serif;
       --font-body: 'General Sans', Inter, sans-serif;
       --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-
     [data-theme="dark"] {
-      --color-bg: #181513;
-      --color-surface: #211d1a;
-      --color-surface-2: #27221f;
-      --color-surface-offset: #302923;
-      --color-border: #433a34;
-      --color-divider: #3a322d;
-      --color-text: #efe4da;
-      --color-text-muted: #c3b5a8;
-      --color-text-faint: #8c7f75;
-      --color-text-inverse: #201915;
-      --color-primary: #d0a179;
-      --color-primary-hover: #e3b48d;
-      --color-primary-highlight: #3b3028;
-      --color-success: #89aa7a;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.22);
-      --shadow-md: 0 8px 24px rgba(0,0,0,0.3);
-      --shadow-lg: 0 20px 45px rgba(0,0,0,0.4);
+      --color-bg: #171210; --color-surface: #211917; --color-surface-2: #2b211f; --color-surface-offset: #342826; --color-border: #4a3a36; --color-divider: #3f322f; --color-text: #f2e7df; --color-text-muted: #cfbdb2; --color-text-faint: #9f8b82; --color-text-inverse: #201715; --color-primary: #dd6ca7; --color-primary-hover: #ea8abc; --color-primary-highlight: #3d2730; --color-vine: #9cb38b; --color-gold: #d0a56b; --shadow-sm: 0 2px 6px rgba(0,0,0,.25); --shadow-md: 0 14px 34px rgba(0,0,0,.35); --shadow-lg: 0 26px 70px rgba(0,0,0,.42);
     }
-
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme]) {
-        --color-bg: #181513;
-        --color-surface: #211d1a;
-        --color-surface-2: #27221f;
-        --color-surface-offset: #302923;
-        --color-border: #433a34;
-        --color-divider: #3a322d;
-        --color-text: #efe4da;
-        --color-text-muted: #c3b5a8;
-        --color-text-faint: #8c7f75;
-        --color-text-inverse: #201915;
-        --color-primary: #d0a179;
-        --color-primary-hover: #e3b48d;
-        --color-primary-highlight: #3b3028;
-        --color-success: #89aa7a;
-      }
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; text-size-adjust: none; -webkit-font-smoothing: antialiased; }
-    body {
-      min-height: 100vh; line-height: 1.6; font-family: var(--font-body); font-size: var(--text-base);
-      color: var(--color-text); background:
-        radial-gradient(circle at top left, color-mix(in srgb, var(--color-primary) 10%, transparent), transparent 30%),
-        radial-gradient(circle at bottom right, color-mix(in srgb, var(--color-success) 10%, transparent), transparent 28%),
-        var(--color-bg);
-    }
-    img, svg { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
-    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    .skip-link { position: absolute; left: var(--space-4); top: -3rem; background: var(--color-primary); color: var(--color-text-inverse); padding: var(--space-3) var(--space-4); border-radius: var(--radius-full); z-index: 100; }
-    .skip-link:focus { top: var(--space-4); }
-
-    .container { width: min(calc(100% - 2rem), var(--content-default)); margin-inline: auto; }
-    .header {
-      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px);
-      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
-      border-bottom: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-    }
-    .nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-4) 0; }
-    .brand { display: inline-flex; align-items: center; gap: var(--space-3); font-weight: 600; }
-    .brand-mark {
-      width: 42px; height: 42px; padding: 8px; border-radius: 50%;
-      background: linear-gradient(145deg, var(--color-primary-highlight), var(--color-surface));
-      color: var(--color-primary); box-shadow: var(--shadow-sm);
-    }
-    .nav-links { display: none; gap: var(--space-4); color: var(--color-text-muted); font-size: var(--text-sm); }
-    .nav-links a:hover { color: var(--color-text); }
-    .theme-toggle {
-      min-width: 44px; min-height: 44px; display: inline-grid; place-items: center;
-      border-radius: var(--radius-full); border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-      background: var(--color-surface); box-shadow: var(--shadow-sm);
-    }
-
-    main { padding-bottom: var(--space-20); }
-    .hero {
-      min-height: 78vh; display: grid; align-items: center; padding: clamp(var(--space-12), 10vw, var(--space-24)) 0;
-    }
-    .hero-grid { display: grid; gap: var(--space-10); }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: var(--space-2); width: fit-content;
-      padding: 0.5rem 0.85rem; border-radius: var(--radius-full);
-      background: var(--color-primary-highlight); color: var(--color-primary); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase;
-    }
-    h1, h2 { font-family: var(--font-display); font-weight: 500; line-height: 1.04; }
-    h1 { font-size: var(--text-3xl); max-width: 10ch; }
-    h2 { font-size: var(--text-xl); margin-bottom: var(--space-4); }
-    .lead { max-width: 58ch; color: var(--color-text-muted); font-size: var(--text-lg); }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
-    .btn {
-      min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
-      padding: 0.9rem 1.25rem; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 600;
-      transition: transform var(--transition-interactive), background var(--transition-interactive), color var(--transition-interactive), border-color var(--transition-interactive);
-    }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: var(--color-primary); color: var(--color-text-inverse); }
-    .btn-primary:hover { background: var(--color-primary-hover); }
-    .btn-secondary { border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent); background: var(--color-surface); }
-
-    .hero-card {
-      background: color-mix(in srgb, var(--color-surface) 88%, transparent);
-      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-      border-radius: calc(var(--radius-xl) + 0.5rem);
-      padding: var(--space-6); box-shadow: var(--shadow-lg);
-    }
-    .hero-card-grid { display: grid; gap: var(--space-4); }
-    .mini-label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-faint); }
-    .hero-card strong { display: block; font-size: var(--text-lg); }
-
-    section { padding: clamp(var(--space-10), 7vw, var(--space-20)) 0; }
-    .section-head { display: grid; gap: var(--space-3); margin-bottom: var(--space-8); }
-    .section-head p { max-width: 62ch; color: var(--color-text-muted); }
-
-    .grid-2, .grid-3 { display: grid; gap: var(--space-4); }
-    .card {
-      background: var(--color-surface); border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-      border-radius: var(--radius-xl); padding: var(--space-5); box-shadow: var(--shadow-sm);
-    }
-    .card h3 { font-size: var(--text-lg); margin-bottom: var(--space-2); }
-    .card p, .card li { color: var(--color-text-muted); }
-    .card ul { list-style: none; display: grid; gap: var(--space-2); }
-    .timeline { display: grid; gap: var(--space-3); }
-    .timeline-item {
-      display: grid; grid-template-columns: 86px 1fr; gap: var(--space-3); align-items: start;
-      padding: var(--space-4); border-radius: var(--radius-lg); background: var(--color-surface-2);
-    }
-    .time { font-size: var(--text-sm); font-weight: 700; color: var(--color-primary); }
-
-    .info-banner {
-      display: grid; gap: var(--space-3); padding: var(--space-6); border-radius: calc(var(--radius-xl) + 0.5rem);
-      background: linear-gradient(135deg, var(--color-surface-offset), var(--color-surface));
-      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-    }
-
-    .faq details {
-      border-top: 1px solid var(--color-divider); padding: var(--space-4) 0;
-    }
-    .faq details:last-child { border-bottom: 1px solid var(--color-divider); }
-    .faq summary { list-style: none; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
-    .faq summary::-webkit-details-marker { display: none; }
-    .faq p { margin-top: var(--space-3); color: var(--color-text-muted); }
-
-    .footer {
-      padding: var(--space-8) 0 var(--space-12); color: var(--color-text-muted); font-size: var(--text-sm);
-      border-top: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
-    }
-
-    .accent-line { width: 72px; height: 1px; background: var(--color-primary); margin-bottom: var(--space-4); }
-    .list-check li { padding-left: 1.6rem; position: relative; }
-    .list-check li::before { content: '•'; position: absolute; left: 0.4rem; color: var(--color-primary); }
-
-    @media (min-width: 760px) {
-      .nav-links { display: flex; }
-      .hero-grid { grid-template-columns: 1.25fr 0.9fr; align-items: center; }
-      .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .asym { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
-    }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme]) { --color-bg: #171210; --color-surface: #211917; --color-surface-2: #2b211f; --color-surface-offset: #342826; --color-border: #4a3a36; --color-divider: #3f322f; --color-text: #f2e7df; --color-text-muted: #cfbdb2; --color-text-faint: #9f8b82; --color-text-inverse: #201715; --color-primary: #dd6ca7; --color-primary-hover: #ea8abc; --color-primary-highlight: #3d2730; --color-vine: #9cb38b; --color-gold: #d0a56b; } }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;text-size-adjust:none}
+    body{min-height:100vh;font-family:var(--font-body);font-size:var(--text-base);line-height:1.65;color:var(--color-text);background:linear-gradient(180deg,#faf6f1 0%,var(--color-bg) 20%,var(--color-bg) 100%)}
+    img,svg{display:block;max-width:100%;height:auto}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .skip-link{position:absolute;left:var(--space-4);top:-3rem;background:var(--color-primary);color:var(--color-text-inverse);padding:var(--space-3) var(--space-4);border-radius:var(--radius-full);z-index:100}.skip-link:focus{top:var(--space-4)}
+    .container{width:min(calc(100% - 2rem),var(--content-default));margin-inline:auto}
+    .site-shell{position:relative;overflow:hidden}
+    .site-shell::before,.site-shell::after{content:'';position:fixed;inset:auto;pointer-events:none;z-index:-1;border-radius:50%}
+    .site-shell::before{top:-8rem;right:-5rem;width:20rem;height:20rem;background:radial-gradient(circle,color-mix(in srgb,var(--color-primary) 12%, transparent),transparent 65%)}
+    .site-shell::after{bottom:-10rem;left:-6rem;width:24rem;height:24rem;background:radial-gradient(circle,color-mix(in srgb,var(--color-vine) 18%, transparent),transparent 70%)}
+    .header{position:sticky;top:0;z-index:50;border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%, transparent);background:color-mix(in srgb,var(--color-bg) 84%, transparent);backdrop-filter:blur(16px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0}
+    .brand{display:inline-flex;align-items:center;gap:var(--space-3);font-weight:600;letter-spacing:.01em}
+    .brand-mark{width:46px;height:46px;padding:8px;border-radius:50%;color:var(--color-primary);background:linear-gradient(145deg,var(--color-primary-highlight),var(--color-surface));box-shadow:var(--shadow-sm);border:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
+    .nav-links{display:none;gap:var(--space-4);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .nav-links a{position:relative;padding-bottom:2px}.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--color-primary);transform:scaleX(0);transform-origin:left;transition:transform var(--transition-interactive)}.nav-links a:hover::after{transform:scaleX(1)}
+    .theme-toggle{min-width:44px;min-height:44px;display:inline-grid;place-items:center;border-radius:var(--radius-full);border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);background:var(--color-surface);box-shadow:var(--shadow-sm)}
+    .hero{padding:clamp(var(--space-12),10vw,var(--space-24)) 0 var(--space-16)}
+    .hero-grid{display:grid;gap:var(--space-10);align-items:end}
+    .eyebrow{display:inline-flex;align-items:center;gap:var(--space-2);padding:.5rem .85rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.1em}
+    .eyebrow::before{content:'◆';font-size:.65rem;color:var(--color-gold)}
+    h1,h2,h3{font-family:var(--font-display);font-weight:500;line-height:1.04}
+    h1{font-size:var(--text-3xl);max-width:10ch}
+    h2{font-size:var(--text-xl);margin-bottom:var(--space-4)}
+    h3{font-size:var(--text-lg)}
+    .lead{max-width:58ch;font-size:var(--text-lg);color:var(--color-text-muted)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6)}
+    .btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);padding:.95rem 1.3rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;transition:transform var(--transition-interactive),background var(--transition-interactive),border-color var(--transition-interactive),color var(--transition-interactive)}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse);box-shadow:var(--shadow-sm)}
+    .btn-primary:hover{background:var(--color-primary-hover)}
+    .btn-secondary{border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);background:var(--color-surface)}
+    .hero-photo{position:relative;min-height:520px;border-radius:calc(var(--radius-xl) + .5rem);overflow:hidden;border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);box-shadow:var(--shadow-lg)}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.96)}
+    .hero-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,248,242,.20))}
+    .hero-caption{position:absolute;left:var(--space-4);right:var(--space-4);bottom:var(--space-4);display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-4);border-radius:var(--radius-lg);background:color-mix(in srgb,var(--color-surface) 76%, transparent);backdrop-filter:blur(10px);border:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
+    .hero-caption div span{display:block}.label{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-faint)}.value{font-size:var(--text-sm);font-weight:600}
+    section{padding:clamp(var(--space-10),7vw,var(--space-20)) 0}
+    .section-head{display:grid;gap:var(--space-3);margin-bottom:var(--space-8)}
+    .section-head p{max-width:64ch;color:var(--color-text-muted)}
+    .section-head .kicker{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em;color:var(--color-gold);font-weight:700}
+    .grid-2,.grid-3{display:grid;gap:var(--space-4)}
+    .card{background:color-mix(in srgb,var(--color-surface) 92%, transparent);border:1px solid color-mix(in srgb,var(--color-text) 9%, transparent);border-radius:var(--radius-xl);padding:var(--space-5);box-shadow:var(--shadow-md)}
+    .card p,.card li{color:var(--color-text-muted)}
+    .timeline{display:grid;gap:var(--space-3)}
+    .timeline-item{display:grid;grid-template-columns:90px 1fr;gap:var(--space-4);padding:var(--space-4);border-radius:var(--radius-lg);background:linear-gradient(135deg,var(--color-surface-2),var(--color-surface));border:1px solid color-mix(in srgb,var(--color-text) 7%, transparent)}
+    .time{font-size:var(--text-sm);font-weight:700;color:var(--color-primary)}
+    .time::after{content:'';display:block;width:36px;height:1px;background:color-mix(in srgb,var(--color-primary) 50%, transparent);margin-top:var(--space-2)}
+    .list-check{list-style:none;display:grid;gap:var(--space-2)}
+    .list-check li{padding-left:1.4rem;position:relative}.list-check li::before{content:'•';position:absolute;left:.35rem;color:var(--color-primary)}
+    .info-banner{display:grid;gap:var(--space-3);padding:var(--space-6);border-radius:calc(var(--radius-xl) + .4rem);background:linear-gradient(135deg,var(--color-surface-offset),var(--color-surface));border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent)}
+    .quote{padding:var(--space-6);border-radius:var(--radius-xl);background:linear-gradient(135deg,color-mix(in srgb,var(--color-primary) 6%, var(--color-surface)),var(--color-surface));border:1px solid color-mix(in srgb,var(--color-text) 8%, transparent);font-size:var(--text-lg)}
+    .lodging-wrap{display:grid;gap:var(--space-4)}
+    .gift-grid{display:grid;gap:var(--space-4);align-items:center}
+    .qr-card{text-align:center}.qr-card img{width:min(240px,100%);margin:0 auto;border-radius:var(--radius-lg);border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);background:#fff}
+    .faq details{border-top:1px solid var(--color-divider);padding:var(--space-4) 0}.faq details:last-child{border-bottom:1px solid var(--color-divider)}.faq summary{list-style:none;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:var(--space-4)}.faq summary::-webkit-details-marker{display:none}.faq p{margin-top:var(--space-3);color:var(--color-text-muted)}
+    .footer{padding:var(--space-8) 0 var(--space-12);border-top:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);font-size:var(--text-sm);color:var(--color-text-muted)}
+    @media (min-width: 840px){.nav-links{display:flex}.hero-grid{grid-template-columns:1.02fr 1.08fr}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.asym{grid-template-columns:1.1fr .9fr;align-items:start}.lodging-wrap{grid-template-columns:1fr 1fr}.gift-grid{grid-template-columns:1.1fr .9fr}}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="#accueil" aria-label="Retour en haut de page">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 40C33.9411 40 42 31.9411 42 22C42 16.4772 39.5121 11.5355 35.5952 8.23374C34.6838 15.6428 30.3616 21.6794 24 25.6C17.6384 21.6794 13.3162 15.6428 12.4048 8.23374C8.48792 11.5355 6 16.4772 6 22C6 31.9411 14.0589 40 24 40Z" stroke="currentColor" stroke-width="2.2"/>
-            <path d="M18 12C18 8.68629 20.6863 6 24 6C27.3137 6 30 8.68629 30 12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span>Mariage en France</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Navigation principale">
-        <a href="#programme">Programme</a>
-        <a href="#lieu">Lieu</a>
-        <a href="#invites">Invités</a>
-        <a href="#rsvp">RSVP</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-
-      <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
-    </div>
-  </header>
-
-  <main id="contenu">
-    <section class="hero" id="accueil">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Informations invités</span>
-          <div class="accent-line"></div>
-          <h1>Une page claire et élégante pour guider vos proches.</h1>
-          <p class="lead">Cette maquette peut servir de site d'information pour votre mariage civil, religieux ou laïque en France. Elle rassemble l'essentiel : date, horaires, accès, hébergements, dress code et réponses pratiques.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#rsvp">Répondre à l'invitation</a>
-            <a class="btn btn-secondary" href="#programme">Voir le programme</a>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Résumé du mariage">
-          <div class="hero-card-grid">
-            <div>
-              <span class="mini-label">Date</span>
-              <strong>Samedi 18 juillet 2026</strong>
-            </div>
-            <div>
-              <span class="mini-label">Cérémonie</span>
-              <strong>Mairie puis réception au domaine</strong>
-            </div>
-            <div>
-              <span class="mini-label">Lieu</span>
-              <strong>Bordeaux & alentours</strong>
-            </div>
-            <div>
-              <span class="mini-label">Réponse souhaitée</span>
-              <strong>Avant le 15 mai 2026</strong>
-            </div>
-          </div>
-        </aside>
+  <div class="site-shell">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="#accueil" aria-label="Retour en haut de page">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 41C34.4934 41 43 32.4934 43 22C43 15.9863 40.2068 10.6252 35.8515 7.14243C34.8487 14.8939 30.3596 21.2078 24 25.2C17.6404 21.2078 13.1513 14.8939 12.1485 7.14243C7.79315 10.6252 5 15.9863 5 22C5 32.4934 13.5066 41 24 41Z" stroke="currentColor" stroke-width="2.2"/><path d="M18 12C18 8.68629 20.6863 6 24 6C27.3137 6 30 8.68629 30 12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </span>
+          <span>Marina & Clément</span>
+        </a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="#programme">Programme</a>
+          <a href="#lieu">Lieu</a>
+          <a href="#infos">Infos</a>
+          <a href="#cagnotte">Cagnotte</a>
+          <a href="#rsvp">RSVP</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
       </div>
-    </section>
+    </header>
 
-    <section id="programme">
-      <div class="container">
-        <div class="section-head">
-          <h2>Le programme</h2>
-          <p>Présentez ici le déroulé de la journée avec des horaires simples à lire. Les invités trouvent rapidement où être, à quelle heure et dans quelle tenue.</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="time">14h00</div>
-            <div>
-              <strong>Cérémonie civile</strong>
-              <p>Accueil devant la mairie, installation des invités puis cérémonie officielle.</p>
+    <main id="contenu">
+      <section class="hero" id="accueil">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Vignoble bordelais</span>
+            <div style="width:74px;height:1px;background:var(--color-primary);margin:var(--space-4) 0;"></div>
+            <h1>Le mariage de Marina et Clément.</h1>
+            <p class="lead">Dans l’élégance douce d’un domaine viticole bordelais, nous vous donnons rendez-vous le samedi 05 septembre 2026 à 16h30 au Domaine de Larchey, à Saint-Médard-d’Eyrans.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#rsvp">Confirmer ma présence</a>
+              <a class="btn btn-secondary" href="#cagnotte">Offrir un cadeau</a>
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="time">16h00</div>
-            <div>
-              <strong>Vin d'honneur</strong>
-              <p>Premiers échanges, photos de groupe et moment convivial avec boissons et pièces salées.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="time">19h30</div>
-            <div>
-              <strong>Dîner & soirée</strong>
-              <p>Ouverture de salle, repas, discours, dessert puis piste de danse jusqu'au bout de la nuit.</p>
+          <div class="hero-photo">
+            <img src="./fond-domaine.jpg" alt="Illustration du Domaine de Larchey dans un esprit vignoble bordelais" width="1440" height="900" loading="eager">
+            <div class="hero-caption">
+              <div><span class="label">Date</span><span class="value">Samedi 05 septembre 2026</span></div>
+              <div><span class="label">Heure</span><span class="value">Rendez-vous à 16h30</span></div>
+              <div><span class="label">Lieu</span><span class="value">Domaine de Larchey</span></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="lieu">
-      <div class="container grid-2 asym">
-        <div>
+      <section id="programme">
+        <div class="container">
           <div class="section-head">
-            <h2>Le lieu et l'accès</h2>
-            <p>Expliquez précisément les adresses, les temps de trajet et les solutions de stationnement. Cette partie évite beaucoup de messages de dernière minute.</p>
+            <span class="kicker">Le déroulé</span>
+            <h2>Une journée pensée comme une promenade de fête</h2>
+            <p>Le programme suit le rythme du faire-part, avec une progression douce entre cérémonie, photos, cocktail, dîner et soirée, dans un esprit convivial et raffiné. [file:46]</p>
           </div>
-          <div class="info-banner">
-            <strong>Exemple à personnaliser</strong>
-            <p>Mairie de Bordeaux — 1 Place Pey Berland, puis réception au Domaine de la Clairière, à 25 minutes en voiture.</p>
-            <p>Ajoutez un lien vers Google Maps, les consignes de parking et, si besoin, une navette retour en fin de soirée.</p>
+          <div class="timeline">
+            <div class="timeline-item"><div class="time">16h45</div><div><strong>Cérémonie laïque</strong><p>Le début de la célébration aura lieu après votre arrivée sur le domaine. [file:46]</p></div></div>
+            <div class="timeline-item"><div class="time">17h45</div><div><strong>Photos</strong><p>Un moment sera dédié aux photos avec les mariés et les invités. [file:46]</p></div></div>
+            <div class="timeline-item"><div class="time">18h30</div><div><strong>Cocktail</strong><p>Le cocktail permettra de profiter du cadre du domaine et des premiers instants de fête. [file:46]</p></div></div>
+            <div class="timeline-item"><div class="time">20h30</div><div><strong>Dîner</strong><p>Le repas sera servi en soirée avant la suite des festivités. [file:46]</p></div></div>
+            <div class="timeline-item"><div class="time">23h30</div><div><strong>Soirée</strong><p>La soirée prolongera la fête dans une ambiance joyeuse et élégante. [file:46]</p></div></div>
           </div>
         </div>
-        <div class="card">
-          <h3>À inclure</h3>
-          <ul class="list-check">
-            <li>Adresse complète de chaque étape.</li>
-            <li>Heure d'arrivée recommandée.</li>
-            <li>Parking, covoiturage ou navette.</li>
-            <li>Accès PMR si nécessaire.</li>
-            <li>Contact d'un témoin ou d'un proche le jour J.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="invites">
-      <div class="container">
-        <div class="section-head">
-          <h2>Infos pour les invités</h2>
-          <p>Vous pouvez rassurer vos proches avec quelques informations concrètes : tenue attendue, hébergements, météo probable et conseils utiles pour profiter sereinement de la journée.</p>
+      <section id="lieu">
+        <div class="container grid-2 asym">
+          <div>
+            <div class="section-head">
+              <span class="kicker">Le domaine</span>
+              <h2>Au cœur de Saint-Médard-d’Eyrans</h2>
+              <p>Le faire-part indique un rendez-vous au Domaine de Larchey, 28 Route de Larchey, 33650 Saint-Médard-d’Eyrans, avec accueil à 16h30. [file:47]</p>
+            </div>
+            <div class="info-banner">
+              <strong>Domaine de Larchey</strong>
+              <p>28 Route de Larchey<br>33650 Saint-Médard-d'Eyrans [file:47]</p>
+              <p>Parking disponible sur le domaine pour les invités. [cite:1]</p>
+            </div>
+          </div>
+          <div class="card">
+            <h3>À retenir</h3>
+            <ul class="list-check">
+              <li>Samedi 05 septembre 2026. [file:47]</li>
+              <li>Rendez-vous à 16h30. [file:47]</li>
+              <li>Cérémonie laïque à 16h45. [file:46]</li>
+              <li>Lieu unique : Domaine de Larchey. [file:47]</li>
+              <li>Parking sur place. [cite:1]</li>
+            </ul>
+          </div>
         </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Dress code</h3>
-            <p>Précisez le niveau de formalité, les couleurs à éviter et des conseils pratiques comme des chaussures adaptées à un cocktail extérieur.</p>
-          </article>
-          <article class="card">
-            <h3>Hébergement</h3>
-            <p>Listez 3 à 5 options proches du lieu, avec niveau de prix, distance et éventuel code de réservation.</p>
-          </article>
-          <article class="card">
-            <h3>Petits détails utiles</h3>
-            <p>Ajoutez les informations sur les enfants, les allergies, le brunch du lendemain ou les photos partagées.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="rsvp">
+      <section id="infos">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">Infos invité·es</span>
+            <h2>Quelques repères utiles</h2>
+            <p>Le faire-part précise une réponse attendue avant le 31 mai, une tenue élégante et une soirée pensée sans parent pour les enfants. [file:46]</p>
+          </div>
+          <div class="grid-3">
+            <article class="card"><h3>RSVP</h3><p>Merci de confirmer votre présence avant le 31 mai. [file:46]</p></article>
+            <article class="card"><h3>Tenue</h3><p>Un soupçon d’élégance nous ravirait. [file:46]</p></article>
+            <article class="card"><h3>Enfants</h3><p>Pour que les grands profitent au maximum, offrez à vos enfants une soirée sans parent. [file:46]</p></article>
+          </div>
+          <div style="margin-top: var(--space-6);" class="quote">Merci de votre présence à nos côtés pour cette journée que nous avons hâte de partager avec vous.</div>
+
+          <div class="section-head" style="margin-top: var(--space-8);">
+            <span class="kicker">Se loger</span>
+            <h2>Autour du domaine</h2>
+            <p>Plusieurs hôtels et chambres d’hôtes ont été listés autour de Saint-Médard-d’Eyrans pour faciliter votre séjour. [file:48]</p>
+          </div>
+          <div class="lodging-wrap">
+            <article class="card">
+              <h3>Hôtels</h3>
+              <ul class="list-check">
+                <li><strong>Hotel Akena***</strong> — à 4 km, 1 Avenue de Viana, 33650 La Brède, 05 57 71 32 65. [file:48]</li>
+                <li><strong>Les Sources de Caudalie*****</strong> — à 5 km, Smith Haut-Lafitte, 33650 Martillac, 05 57 83 83 83. [file:48]</li>
+                <li><strong>Ibis Styles*** Bordeaux Sud</strong> — à 11 km, 10 Av. du Maréchal Leclerc, 33140 Villenave-d'Ornon, 05 56 87 82 86. [file:48]</li>
+                <li><strong>Hotel Campanile Bordeaux Sud**</strong> — à 15 km, Allée des Demoiselles, 33170 Gradignan, 05 56 80 63 33. [file:48]</li>
+                <li><strong>Château de Léognan</strong> — à 15 km, 88 chemin du Barp, 33850 Léognan, 05 35 56 96 70. [file:48]</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Chambres d’hôtes</h3>
+              <ul class="list-check">
+                <li><strong>Villa Gena</strong> — à 1,6 km, 4 Ter chemin de Matelot, 33650 Saint-Médard-d'Eyrans, 06 20 11 47 78. [file:48]</li>
+                <li><strong>Le Nid dans la Vigne</strong> — à 2 km, 6 chemin de la Borderie, 33650 La Brède, 06 03 15 41 19. [file:48]</li>
+                <li><strong>Gîte d'ici et d'ailleurs</strong> — à 8 km, Rte de Castres, 33650 Saint Morillon, 06 69 28 58 93. [file:48]</li>
+                <li><strong>Chambres d'hôtes Vignoble Océan</strong> — à 4 km, 11 allée de l'Estivette, 33650 La Brède, 05 56 78 48 06. [file:48]</li>
+                <li><strong>Château Lassalle</strong> — à 7 km, 2 allée Lassalle, 33650 La Brède, 05 56 78 49 65. [file:48]</li>
+                <li><strong>Château Galibert</strong> — à 5 km, 780 chemin Port des Places, 33140 Cadaujac, 06 20 64 88 08. [file:48]</li>
+                <li><strong>Château La Garde</strong> — à 2 km, 1 chemin la Tour, 33650 Martillac, 09 60 44 04 76. [file:48]</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cagnotte">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">Le cadeau</span>
+            <h2>Une escapade vers le Vietnam</h2>
+            <p>Une cagnotte est disponible pour celles et ceux qui souhaitent offrir un cadeau aux mariés. Leur foyer étant déjà construit, cette participation servira à financer leur voyage de noces au Vietnam. [cite:1]</p>
+          </div>
+          <div class="gift-grid">
+            <article class="card">
+              <h3>Participer en ligne</h3>
+              <p>Vous pouvez accéder directement à la cagnotte via ce lien. [cite:1]</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://www.onparticipe.fr/c/JevByx2V" target="_blank" rel="noopener noreferrer">Accéder à la cagnotte</a>
+              </div>
+              <p style="margin-top: var(--space-4);"><a href="https://www.onparticipe.fr/c/JevByx2V" target="_blank" rel="noopener noreferrer">https://www.onparticipe.fr/c/JevByx2V</a> [cite:1]</p>
+            </article>
+            <article class="card qr-card">
+              <h3>QR code</h3>
+              <img src="./QR-CODE-cagnotte.jpg" alt="QR code de la cagnotte des mariés" width="440" height="440" loading="lazy">
+              <p style="margin-top: var(--space-4);">Scannez ce QR code pour ouvrir directement la cagnotte. [file:50]</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rsvp">
+        <div class="container grid-2">
+          <article class="card">
+            <h2>Confirmer votre présence</h2>
+            <p>Les réponses se font via le formulaire en ligne communiqué pour les invités. [cite:1]</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://docs.google.com/forms/d/1cFUETy5gQJYr7jqFvtjEPpPaF-llLxPkJWrkbAjPB9E/edit" target="_blank" rel="noopener noreferrer">Répondre au formulaire</a>
+              <a class="btn btn-secondary" href="#faq">Voir la FAQ</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>À préciser dans votre réponse</h3>
+            <ul class="list-check">
+              <li>Votre présence ou votre absence. [cite:1]</li>
+              <li>Le nom des personnes présentes. [cite:1]</li>
+              <li>Vos éventuelles contraintes alimentaires. [cite:1]</li>
+              <li>Votre besoin éventuel de logement à proximité. [cite:1]</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">Questions fréquentes</span>
+            <h2>Pour venir l’esprit léger</h2>
+            <p>Cette FAQ reprend les informations essentielles déjà présentes sur le faire-part et sur cette page. [file:46][file:47][cite:1]</p>
+          </div>
+          <div class="faq">
+            <details><summary>À quelle heure faut-il arriver ? <span aria-hidden="true">+</span></summary><p>Le rendez-vous est fixé à 16h30 au Domaine de Larchey, avec une cérémonie laïque annoncée à 16h45. [file:46][file:47]</p></details>
+            <details><summary>Y a-t-il un parking sur place ? <span aria-hidden="true">+</span></summary><p>Oui, un parking est disponible directement sur le domaine. [cite:1]</p></details>
+            <details><summary>Comment offrir un cadeau aux mariés ? <span aria-hidden="true">+</span></summary><p>Une cagnotte est disponible sur la page pour celles et ceux qui souhaitent participer à leur voyage de noces au Vietnam. [cite:1]</p></details>
+            <details><summary>Quelle tenue prévoir ? <span aria-hidden="true">+</span></summary><p>Le mot d’ordre est simple : un soupçon d’élégance nous ravirait. [file:46]</p></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container grid-2">
-        <div class="card">
-          <h2>Répondre simplement</h2>
-          <p>Cette section peut pointer vers un formulaire Google Forms, Typeform ou un simple mail. L'idée est d'obtenir rapidement la présence, le nombre de personnes et les contraintes alimentaires.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:contact@mariage.fr">Envoyer ma réponse</a>
-            <a class="btn btn-secondary" href="https://forms.google.com" target="_blank" rel="noopener noreferrer">Exemple de formulaire</a>
-          </div>
+        <div>
+          <strong>Marina & Clément</strong>
+          <p>Samedi 05 septembre 2026 — Domaine de Larchey, Saint-Médard-d’Eyrans. [file:47]</p>
         </div>
-        <div class="card">
-          <h3>Informations à demander</h3>
-          <ul class="list-check">
-            <li>Présence ou absence.</li>
-            <li>Nom des accompagnants.</li>
-            <li>Régime alimentaire ou allergies.</li>
-            <li>Besoin d'hébergement ou de navette.</li>
-            <li>Participation au brunch du lendemain.</li>
-          </ul>
+        <div>
+          <p>Version raffinée inspirée du vignoble bordelais, avec domaine aquarellé, teintes lie-de-vin et verts de vigne. [file:51][file:47]</p>
         </div>
       </div>
-    </section>
-
-    <section id="faq">
-      <div class="container">
-        <div class="section-head">
-          <h2>Questions fréquentes</h2>
-          <p>Une FAQ courte réduit les oublis et rend la page plus autonome. Gardez des réponses brèves, concrètes et faciles à scanner.</p>
-        </div>
-        <div class="faq">
-          <details>
-            <summary>Les enfants sont-ils invités ? <span aria-hidden="true">+</span></summary>
-            <p>Indiquez clairement si l'événement est ouvert aux enfants, partiellement ouvert, ou réservé aux adultes.</p>
-          </details>
-          <details>
-            <summary>Peut-on venir avec un plus-un ? <span aria-hidden="true">+</span></summary>
-            <p>Précisez si le nom de l'accompagnant doit être confirmé au moment du RSVP.</p>
-          </details>
-          <details>
-            <summary>Y a-t-il un plan B en cas de pluie ? <span aria-hidden="true">+</span></summary>
-            <p>Rassurez les invités sur la solution prévue : tente, salle intérieure ou adaptation du cocktail.</p>
-          </details>
-          <details>
-            <summary>Comment partager les photos ? <span aria-hidden="true">+</span></summary>
-            <p>Vous pouvez ajouter un hashtag, un album partagé ou un QR code vers un dossier photo.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container grid-2">
-      <div>
-        <strong>Mariage en France</strong>
-        <p>Maquette prête à adapter avec vos informations, vos couleurs et vos lieux.</p>
-      </div>
-      <div>
-        <p>Conseil : remplacez les contenus d'exemple par vos vraies adresses, horaires et contacts, puis partagez cette page par lien ou QR code.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script>
     (function () {
@@ -432,13 +331,11 @@
       const root = document.documentElement;
       let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       root.setAttribute('data-theme', theme);
-
       function renderIcon(mode) {
         return mode === 'dark'
           ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
           : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
       }
-
       toggle.innerHTML = renderIcon(theme);
       toggle.addEventListener('click', () => {
         theme = theme === 'dark' ? 'light' : 'dark';
