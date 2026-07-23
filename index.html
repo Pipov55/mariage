@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariage Marina & Clément — Édition premium</title>
+  <meta name="description" content="Page élégante et raffinée pour annoncer le mariage de Marina et Clément et transmettre toutes les informations utiles aux invités." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --text-3xl: clamp(2.5rem, 1rem + 4vw, 5rem);
+      --text-hero: clamp(3rem, 1.4rem + 6vw, 7rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem; --space-32: 8rem;
+      --color-bg: #f6f1ec;
+      --color-surface: #fcf8f4;
+      --color-surface-2: #fffdfb;
+      --color-surface-offset: #efe4dc;
+      --color-surface-deep: #eadfd7;
+      --color-border: rgba(73, 44, 45, 0.14);
+      --color-divider: rgba(73, 44, 45, 0.1);
+      --color-text: #3f292f;
+      --color-text-muted: #746269;
+      --color-text-faint: #a59499;
+      --color-text-inverse: #fff9f7;
+      --color-primary: #9a1d60;
+      --color-primary-hover: #76164a;
+      --color-primary-soft: rgba(154, 29, 96, 0.08);
+      --color-gold: #b89a63;
+      --color-gold-soft: rgba(184, 154, 99, 0.12);
+      --shadow-sm: 0 10px 24px rgba(67, 42, 47, 0.06);
+      --shadow-md: 0 24px 60px rgba(67, 42, 47, 0.12);
+      --shadow-lg: 0 36px 80px rgba(67, 42, 47, 0.15);
+      --radius-sm: 0.5rem; --radius-md: 0.875rem; --radius-lg: 1.25rem; --radius-xl: 1.75rem; --radius-2xl: 2.4rem; --radius-full: 9999px;
+      --content-default: 1180px;
+      --content-narrow: 760px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', Arial, sans-serif;
+      --font-script: 'Allura', cursive;
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #171315;
+      --color-surface: #211b1d;
+      --color-surface-2: #2a2326;
+      --color-surface-offset: #32292d;
+      --color-surface-deep: #3a2f34;
+      --color-border: rgba(255, 241, 238, 0.12);
+      --color-divider: rgba(255, 241, 238, 0.09);
+      --color-text: #f3e6e3;
+      --color-text-muted: #cab9bd;
+      --color-text-faint: #98878c;
+      --color-text-inverse: #1d1719;
+      --color-primary: #df77ad;
+      --color-primary-hover: #e992bc;
+      --color-primary-soft: rgba(223, 119, 173, 0.11);
+      --color-gold: #d5b47a;
+      --color-gold-soft: rgba(213, 180, 122, 0.12);
+      --shadow-sm: 0 12px 24px rgba(0, 0, 0, 0.22);
+      --shadow-md: 0 26px 60px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 38px 90px rgba(0, 0, 0, 0.42);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: none; text-rendering: optimizeLegibility; }
+    body {
+      min-height: 100dvh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.68;
+      color: var(--color-text);
+      background:
+        radial-gradient(circle at top left, rgba(184, 154, 99, 0.15), transparent 24%),
+        radial-gradient(circle at top right, rgba(154, 29, 96, 0.09), transparent 28%),
+        linear-gradient(180deg, #fbf7f3 0%, var(--color-bg) 38%, #f3ebe5 100%);
+    }
+    img, iframe, svg { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button { background: none; border: 0; font: inherit; cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+    .skip-link {
+      position: absolute; left: var(--space-4); top: -40px; z-index: 100;
+      padding: var(--space-3) var(--space-4); border-radius: var(--radius-full);
+      background: var(--color-primary); color: var(--color-text-inverse);
+    }
+    .skip-link:focus { top: var(--space-4); }
+    .shell { width: min(calc(100% - 2rem), var(--content-default)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(16px);
+      background: color-mix(in srgb, var(--color-bg) 78%, transparent);
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .topbar-inner {
+      width: min(calc(100% - 2rem), var(--content-default)); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-4) 0;
+    }
+    .brand {
+      display: flex; align-items: center; gap: var(--space-3); min-width: 0;
+    }
+    .brand-mark { width: 38px; height: 38px; color: var(--color-primary); flex: none; }
+    .brand-copy { min-width: 0; }
+    .brand-title { font-family: var(--font-display); font-size: var(--text-lg); letter-spacing: 0.02em; }
+    .brand-meta { font-size: var(--text-xs); color: var(--color-text-muted); letter-spacing: 0.18em; text-transform: uppercase; }
+    .nav {
+      display: none; align-items: center; gap: var(--space-4);
+      font-size: var(--text-sm); color: var(--color-text-muted);
+    }
+    .nav a:hover { color: var(--color-primary); }
+    .top-actions { display: flex; align-items: center; gap: var(--space-3); }
+    .theme-toggle {
+      min-width: 44px; min-height: 44px; border-radius: var(--radius-full);
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--color-surface); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);
+      color: var(--color-text);
+    }
+
+    main { padding: var(--space-8) 0 var(--space-24); }
+    section { margin-top: var(--space-10); }
+
+    .hero {
+      position: relative; overflow: hidden; border-radius: clamp(1.75rem, 4vw, 3rem);
+      min-height: min(92svh, 920px);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-lg);
+      display: grid;
+    }
+    .hero-media {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(0.92) brightness(1.02);
+    }
+    .hero-wash {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(90deg, rgba(248, 241, 236, 0.82) 0%, rgba(248, 241, 236, 0.54) 36%, rgba(248, 241, 236, 0.3) 58%, rgba(248, 241, 236, 0.78) 100%),
+        linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.62));
+    }
+    .hero-inner {
+      position: relative; z-index: 1; display: grid; grid-template-columns: 1fr; align-items: end; min-height: inherit;
+      padding: clamp(1.5rem, 4vw, 3rem);
+    }
+    .hero-panel {
+      width: min(760px, 100%);
+      background: rgba(252, 248, 244, 0.75);
+      border: 1px solid rgba(73, 44, 45, 0.1);
+      border-radius: clamp(1.5rem, 3vw, 2.25rem);
+      box-shadow: var(--shadow-md);
+      padding: clamp(1.5rem, 4vw, 3rem);
+      backdrop-filter: blur(8px);
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      margin-bottom: var(--space-4); padding: 0.5rem 0.9rem; border-radius: var(--radius-full);
+      background: rgba(255,255,255,0.56); border: 1px solid rgba(73, 44, 45, 0.1);
+      color: var(--color-text-muted); font-size: var(--text-xs); letter-spacing: 0.18em; text-transform: uppercase;
+    }
+    .script { font-family: var(--font-script); color: var(--color-primary); font-size: clamp(3.4rem, 7vw, 7rem); line-height: 0.88; margin-bottom: var(--space-4); }
+    h1 {
+      font-family: var(--font-display); font-size: clamp(2.3rem, 4vw, 4.6rem); line-height: 0.95; font-weight: 600;
+      max-width: 11ch; margin-bottom: var(--space-4);
+    }
+    .hero-meta {
+      display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-5); align-items: center;
+      margin-bottom: var(--space-5); color: var(--color-text-muted); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.18em;
+    }
+    .hero-meta strong { color: var(--color-primary); font-family: var(--font-display); font-size: var(--text-xl); letter-spacing: 0.04em; }
+    .lead {
+      max-width: 34ch; font-family: var(--font-display); font-size: var(--text-lg); font-weight: 500;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+    .btn {
+      min-height: 48px; padding: 0.9rem 1.2rem; border-radius: var(--radius-full); display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+      font-size: var(--text-sm); font-weight: 600; transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--color-primary); color: var(--color-text-inverse); }
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-ghost { border: 1px solid var(--color-border); background: rgba(255,255,255,0.45); }
+    .btn-ghost:hover { background: var(--color-primary-soft); }
+
+    .intro-grid,
+    .cards-2,
+    .cards-3,
+    .gift-grid,
+    .practical-grid,
+    .hosting-grid { display: grid; gap: var(--space-6); }
+
+    .card, .feature, .spotlight, .timeline-shell, .map-card, .gift-card {
+      background: color-mix(in srgb, var(--color-surface) 92%, white 8%);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-sm);
+    }
+    .card, .feature, .spotlight, .timeline-shell, .map-card, .gift-card { padding: clamp(1.25rem, 3vw, 2rem); }
+    .kicker {
+      margin-bottom: var(--space-3); color: var(--color-primary); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.18em;
+    }
+    .section-title {
+      font-family: var(--font-display); font-size: var(--text-xl); line-height: 1.05; font-weight: 600; margin-bottom: var(--space-4);
+    }
+    .section-copy { max-width: 65ch; color: var(--color-text-muted); }
+
+    .story-note {
+      padding: var(--space-5); border-radius: var(--radius-xl); background: var(--color-primary-soft); color: var(--color-text);
+      border: 1px solid rgba(154, 29, 96, 0.12);
+      margin-top: var(--space-5);
+    }
+    .place-card figure {
+      overflow: hidden; border-radius: calc(var(--radius-2xl) - var(--space-4)); border: 1px solid var(--color-border); margin-bottom: var(--space-5);
+    }
+    .place-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+    .place-meta {
+      display: grid; gap: var(--space-4);
+    }
+    .place-line {
+      padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-divider);
+    }
+    .place-line:last-child { border-bottom: 0; padding-bottom: 0; }
+    .label { display: block; margin-bottom: var(--space-1); color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.16em; }
+
+    .timeline-shell { position: relative; overflow: hidden; }
+    .timeline-shell::before {
+      content: ""; position: absolute; left: 57px; top: 128px; bottom: 38px; width: 1px; background: linear-gradient(180deg, var(--color-gold), transparent);
+    }
+    .timeline-head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-4); margin-bottom: var(--space-6); }
+    .timeline-list { display: grid; gap: var(--space-4); }
+    .timeline-item {
+      display: grid; grid-template-columns: 92px 1fr; gap: var(--space-4); align-items: start; position: relative;
+    }
+    .timeline-time {
+      position: relative; font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; color: var(--color-primary);
+      padding-top: 0.3rem;
+    }
+    .timeline-time::after {
+      content: ""; position: absolute; right: 8px; top: 0.8rem; width: 10px; height: 10px; border-radius: 50%;
+      background: var(--color-gold); box-shadow: 0 0 0 6px var(--color-gold-soft);
+    }
+    .timeline-content {
+      padding: var(--space-4) var(--space-5); border-radius: var(--radius-xl); background: var(--color-surface-2); border: 1px solid var(--color-border);
+    }
+    .timeline-content h3 { font-family: var(--font-display); font-size: var(--text-lg); margin-bottom: var(--space-1); }
+    .timeline-content p { color: var(--color-text-muted); }
+
+    .mini-banner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4);
+      padding: var(--space-5) var(--space-6); border-radius: var(--radius-xl); background: linear-gradient(135deg, var(--color-primary-soft), rgba(255,255,255,0.28)); border: 1px solid rgba(154, 29, 96, 0.12);
+    }
+    .mini-banner strong { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; }
+
+    .feature h3, .gift-card h3, .map-card h3, .card h3 {
+      font-family: var(--font-display); font-size: var(--text-lg); margin-bottom: var(--space-2);
+    }
+    .feature p, .gift-card p, .map-card p, .card p { color: var(--color-text-muted); }
+    .badge {
+      display: inline-flex; align-items: center; gap: var(--space-2); padding: 0.55rem 0.85rem; border-radius: var(--radius-full);
+      background: var(--color-primary-soft); color: var(--color-primary); font-size: var(--text-sm); font-weight: 600;
+    }
+    .badge.gold { background: var(--color-gold-soft); color: #8d6e2e; }
+
+    .dress-code {
+      display: grid; gap: var(--space-4); padding: var(--space-6); border-radius: var(--radius-2xl);
+      background: linear-gradient(145deg, rgba(184,154,99,0.12), rgba(255,255,255,0.58)); border: 1px solid rgba(184,154,99,0.18);
+    }
+    .dress-code p { color: var(--color-text); }
+
+    .hosting-grid .feature,
+    .practical-grid .feature { min-height: 100%; }
+
+    .map-card iframe {
+      width: 100%; min-height: 340px; border: 0; border-radius: calc(var(--radius-2xl) - var(--space-4)); margin-top: var(--space-5);
+      filter: saturate(0.9) contrast(1.02);
+    }
+    .map-link {
+      display: inline-flex; margin-top: var(--space-4); padding: 0.8rem 1.05rem; border-radius: var(--radius-full);
+      background: var(--color-surface-2); border: 1px solid var(--color-border); font-size: var(--text-sm); font-weight: 600;
+    }
+
+    .gift-card {
+      background: linear-gradient(180deg, rgba(154,29,96,0.08), rgba(255,255,255,0.45));
+    }
+    .gift-grid .qr-box {
+      justify-self: center; width: min(320px, 100%); background: white; padding: var(--space-4);
+      border-radius: var(--radius-2xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-md);
+    }
+    .gift-grid .qr-box img { width: 100%; aspect-ratio: 1; object-fit: contain; }
+    .gift-link {
+      display: inline-flex; margin-top: var(--space-5); min-height: 48px; align-items: center; justify-content: center;
+      padding: 0.9rem 1.15rem; border-radius: var(--radius-full); background: var(--color-primary); color: var(--color-text-inverse); font-weight: 700;
+    }
+
+    .footer {
+      margin-top: var(--space-16); text-align: center; color: var(--color-text-muted); padding-bottom: var(--space-6);
+    }
+    .footer .script { font-size: 3rem; margin-bottom: var(--space-2); }
+
+    @media (min-width: 960px) {
+      .nav { display: flex; }
+      .intro-grid { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
+      .cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .gift-grid { grid-template-columns: 1fr 320px; align-items: center; }
+      .practical-grid { grid-template-columns: 1.05fr 0.95fr; }
+      .hosting-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 959px) {
+      .topbar-inner { align-items: flex-start; }
+      .hero { min-height: auto; }
+      .hero-wash {
+        background:
+          linear-gradient(180deg, rgba(248, 241, 236, 0.28) 0%, rgba(248, 241, 236, 0.76) 52%, rgba(248, 241, 236, 0.94) 100%);
+      }
+      h1 { max-width: 12ch; }
+      .timeline-shell::before { display: none; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .timeline-time::after { left: 0; right: auto; top: auto; bottom: -0.2rem; }
+      .timeline-time { padding-bottom: var(--space-4); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="Marina et Clément">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" fill="none">
+          <path d="M32 54c-12-8-20-17-20-28 0-8 5-14 13-14 4 0 7 1.8 9 5 2-3.2 5-5 9-5 8 0 13 6 13 14 0 11-8 20-20 28-2.1 1.4-1.9 1.4-4 0Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+          <path d="M22 24c1.6-3.3 5-5.5 10-5.5S40.4 20.7 42 24" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-copy">
+          <div class="brand-title">Marina &amp; Clément</div>
+          <div class="brand-meta">05 septembre 2026</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#lieu">Lieu</a>
+        <a href="#programme">Programme</a>
+        <a href="#sejour">Séjour</a>
+        <a href="#acces">Accès</a>
+        <a href="#cagnotte">Cagnotte</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Basculer le thème">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu" class="shell">
+    <section class="hero" aria-labelledby="titre-mariage">
+      <img class="hero-media" src="./assets/domaine.jpg" alt="Illustration du Domaine de Larchey" width="1600" height="900" loading="eager" decoding="async">
+      <div class="hero-wash"></div>
+      <div class="hero-inner">
+        <div class="hero-panel">
+          <div class="eyebrow">Annonce de mariage</div>
+          <div class="script">Marina &amp; Clément</div>
+          <div class="hero-meta">
+            <span>Samedi</span>
+            <strong>05</strong>
+            <span>Septembre 2026</span>
+            <span>Accueil dès 16h30</span>
+          </div>
+          <p class="lead">Entre vignes, lumière douce et élégance, nous aurons la joie de vous retrouver au 28 route de Larchey, 33650 Saint-Médard-d'Eyrans.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#programme">Découvrir le programme</a>
+            <a class="btn btn-ghost" href="#cagnotte">Voir la cagnotte</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-grid" id="lieu" aria-labelledby="lieu-titre">
+      <article class="spotlight place-card">
+        <div class="kicker">Le lieu</div>
+        <h2 class="section-title" id="lieu-titre">Domaine de Larchey</h2>
+        <figure>
+          <img src="fond-domaine.jpg" alt="Vue du Domaine de Larchey" width="1600" height="900" loading="lazy" decoding="async">
+        </figure>
+        <div class="place-meta">
+          <div class="place-line">
+            <span class="label">Adresse</span>
+            <p>28 route de Larchey<br>33650 Saint-Médard-d'Eyrans</p>
+          </div>
+          <div class="place-line">
+            <span class="label">Stationnement</span>
+            <p>Un parking est disponible directement sur place pour l'ensemble des invités.</p>
+          </div>
+          <div class="place-line">
+            <span class="label">Sécurité</span>
+            <p>Le portail du domaine sera fermé à partir de 23h et restera gardienné jusqu'à la fin de soirée.</p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <div class="kicker">L'esprit</div>
+        <h2 class="section-title">Une journée pensée pour profiter pleinement</h2>
+        <p class="section-copy">La célébration se déroulera au même endroit du premier accueil jusqu'au brunch du lendemain, afin de laisser toute la place aux retrouvailles, à la fête et à la douceur de ce week-end.</p>
+        <div class="story-note">
+          <span class="badge gold">Dress code</span>
+          <p style="margin-top: var(--space-3);">Un soupçon d'élégance : une tenue soignée, légère et confortable sera parfaite pour accompagner l'ambiance du domaine.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="programme" aria-labelledby="programme-titre">
+      <article class="timeline-shell">
+        <div class="timeline-head">
+          <div>
+            <div class="kicker">Déroulé</div>
+            <h2 class="section-title" id="programme-titre">Programme du 5 septembre</h2>
+          </div>
+          <span class="badge">Cérémonie, dîner et soirée</span>
+        </div>
+        <div class="timeline-list" role="list">
+          <div class="timeline-item" role="listitem"><div class="timeline-time">16h30</div><div class="timeline-content"><h3>Rafraîchissement</h3><p>Accueil des invités et premiers instants partagés au domaine.</p></div></div>
+          <div class="timeline-item" role="listitem"><div class="timeline-time">17h00</div><div class="timeline-content"><h3>Cérémonie laïque</h3><p>Le temps fort de la journée, dans un cadre intime et chaleureux.</p></div></div>
+          <div class="timeline-item" role="listitem"><div class="timeline-time">18h00</div><div class="timeline-content"><h3>Photos de groupe</h3><p>Merci de rester à proximité afin de faciliter l'organisation des clichés.</p></div></div>
+          <div class="timeline-item" role="listitem"><div class="timeline-time">18h30</div><div class="timeline-content"><h3>Cocktail</h3><p>Un moment convivial pour profiter du parc et des échanges entre proches.</p></div></div>
+          <div class="timeline-item" role="listitem"><div class="timeline-time">20h30</div><div class="timeline-content"><h3>Repas</h3><p>Le dîner viendra prolonger la célébration dans une atmosphère élégante et festive.</p></div></div>
+          <div class="timeline-item" role="listitem"><div class="timeline-time">23h30</div><div class="timeline-content"><h3>Soirée dansante</h3><p>Place à la fête pour continuer la nuit ensemble.</p></div></div>
+          <div class="timeline-item" role="listitem"><div class="timeline-time">4h00</div><div class="timeline-content"><h3>Fin de soirée</h3><p>Clôture de la réception après une longue nuit de danse et de joie.</p></div></div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <div class="mini-banner">
+        <div>
+          <div class="kicker">Le lendemain</div>
+          <strong>Brunch à partir de 11h30 sur la terrasse du domaine</strong>
+        </div>
+        <p>Le dimanche se prolongera dans une atmosphère détendue et conviviale. Prévoyez vos triplettes pour l'après-midi.</p>
+      </div>
+    </section>
+
+    <section class="hosting-grid" id="sejour" aria-labelledby="sejour-titre">
+      <article class="card">
+        <div class="kicker">Hébergement</div>
+        <h2 class="section-title" id="sejour-titre">Séjour sur le domaine</h2>
+        <div class="cards-3" style="margin-top: var(--space-5);">
+          <div class="feature">
+            <h3>Check-in</h3>
+            <p>Pour les invités logés sur place, l'arrivée se fait à partir de 16h00 à l'accueil de l'hôtel.</p>
+          </div>
+          <div class="feature">
+            <h3>Check-out</h3>
+            <p>Le départ doit être effectué avant 11h45 le jour du retour.</p>
+          </div>
+          <div class="feature">
+            <h3>Petit déjeuner</h3>
+            <p>Il est compris et servi au restaurant de l'hôtel de 8h30 à 9h30.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="dress-code">
+        <div class="kicker">Familles</div>
+        <h2 class="section-title">Enfants bienvenus, ambiance soignée</h2>
+        <p>Les enfants sont les bienvenus tout au long de la journée. Pour leur sécurité, ils ne peuvent toutefois pas déambuler seuls dans le domaine et devront rester sous la responsabilité de leurs parents, ou être confiés aux animatrices présentes dès 16h30 et jusqu'à la fin de soirée.</p>
+        <div style="display:flex; flex-wrap:wrap; gap: var(--space-3);">
+          <span class="badge">Animatrices dès 16h30</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="practical-grid" id="acces" aria-labelledby="acces-titre">
+      <article class="map-card">
+        <div class="kicker">Venir au domaine</div>
+        <h2 class="section-title" id="acces-titre">Accès et itinéraire</h2>
+        <div class="cards-2" style="margin-top: var(--space-5);">
+          <div class="feature">
+            <h3>En voiture</h3>
+            <p>Depuis Bordeaux, prendre l'A62 direction Toulouse puis la sortie 1 Martillac / Saint-Médard-d'Eyrans.</p>
+          </div>
+          <div class="feature">
+            <h3>En train</h3>
+            <p>La gare de Saint-Médard-d'Eyrans se trouve à 3 km du domaine. Un train direct depuis Bordeaux Saint-Jean permet d'y arriver en environ 12 minutes.</p>
+          </div>
+        </div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=28+route+de+Larchey+33650+Saint-M%C3%A9dard-d%27Eyrans" target="_blank" rel="noopener noreferrer">Ouvrir l'itinéraire dans Google Maps</a>
+        <iframe
+          title="Carte du Domaine de Larchey"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=28%20route%20de%20Larchey%2033650%20Saint-M%C3%A9dard-d%27Eyrans&output=embed">
+        </iframe>
+      </article>
+
+      <aside class="card">
+        <div class="kicker">Repères utiles</div>
+        <h2 class="section-title">Informations pratiques</h2>
+        <div class="cards-2" style="margin-top: var(--space-5); grid-template-columns: 1fr;">
+          <div class="feature">
+            <h3>Accueil</h3>
+            <p>Un rafraîchissement est prévu dès 16h30 avant le début de la cérémonie laïque à 17h00.</p>
+          </div>
+          <div class="feature">
+            <h3>Taxis</h3>
+            <p>Des taxis ont l'habitude de travailler avec le domaine. Cette section peut accueillir leurs coordonnées dès que vous souhaitez les ajouter.</p>
+          </div>
+          <div class="feature">
+            <h3>Soirée sécurisée</h3>
+            <p>Une fois le portail fermé à 23h, le domaine reste gardienné jusqu'à la fin de soirée.</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="cagnotte" aria-labelledby="cadeau-titre">
+      <div class="gift-grid">
+        <article class="gift-card">
+          <div class="kicker">Cadeau</div>
+          <h2 class="section-title" id="cadeau-titre">Une contribution pour le voyage de noces</h2>
+          <p>Pour celles et ceux qui souhaitent faire un cadeau aux mariés, une cagnotte est ouverte afin de contribuer à leur voyage de noces au Vietnam.</p>
+          <p style="margin-top: var(--space-3);">Leur foyer étant déjà construit, cette attention leur permettra surtout de s'offrir de beaux souvenirs à deux.</p>
+          <a class="gift-link" href="https://www.onparticipe.fr/c/JevByx2V" target="_blank" rel="noopener noreferrer">Accéder à la cagnotte</a>
+        </article>
+        <div class="qr-box">
+          <img src="QR-CODE-cagnotte.jpg" alt="QR code vers la cagnotte de mariage" width="800" height="800" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="script">À très vite</div>
+      <p>Nous avons hâte de partager cette belle journée avec vous.</p>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const root = document.documentElement;
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+
+      const renderIcon = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        toggle.setAttribute('aria-label', theme === 'dark' ? 'Passer au thème clair' : 'Passer au thème sombre');
+      };
+
+      renderIcon();
+      toggle.addEventListener('click', function () {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        renderIcon();
+      });
+    })();
+  </script>
+</body>
+</html>
